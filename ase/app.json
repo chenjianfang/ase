@@ -1,0 +1,38 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/send-article/send-article",
+   
+    "pages/create/create",
+    "pages/chat/chat",
+    "pages/my/my",
+    "pages/room-search/room-search",
+    "pages/community-model/community-model"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "社区",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color":"#8c8c8c",
+    "selectedColor":"#797979",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"A社",
+      "iconPath":"images/todo.png",
+      "selectedIconPath":"images/selecttodo.png"
+    },{
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath":"images/my.png",
+      "selectedIconPath":"images/selectmy.png"
+    }]
+  }
+}

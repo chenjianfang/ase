@@ -1,0 +1,54 @@
+<view class="community-wrapper">
+	<view class="community-head clearfix">
+		<swiper class="head-swiper" indicator-dots="true" autoplay="true">
+			<swiper-item>
+				<image class="swiper-img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" ></image>
+			</swiper-item>
+			<swiper-item>
+				<image class="swiper-img" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" ></image>
+			</swiper-item>
+		</swiper>
+		<view class="head-proto-tips clearfix {{hideBool?'headshadow':''}}">
+			<view class="community-chat {{hideBool?'chat-display':''}}" catchtap="goChatRoom">
+				<image class="chat-img" src="../../images/chat.png"></image>
+				<text>online</text>
+			</view>
+			<view class="head-search {{hideBool?'head-search-pos':''}}" catchtap="jsCommunitySearch">
+				<input type="text" class="search-input-button community-search-input {{hideBool?'input-translate':''}}" bindfocus="jsCommunitySearch" placeholder="搜索" placeholder-style="color:#b1b1b1" bindinput="inputSearchValue" value="{{searchValue}}" />
+				<icon size="18" class="search-icon" type="search" />
+				<image src="../../images/clear.png" class="search-clear-icon community-search-clear {{hideBool?'show':'hide'}}" catchtap="inputValueClear"></image>
+			</view>
+			<view class="search-submit {{hideBool?'show':'hide'}}">搜索</view>
+			<view class="{{hideBool?'shadow-bg':''}}" catchtap="shadowBgOperate"></view>
+		</view>
+	</view>
+	<view class="classification" catchtap="classificationSelect">
+		<text class="classification-list {{classifi == '0' ? 'classification-focus' : '' }}" data-classifi="0" >全部</text>
+		<text class="classification-list {{classifi == '1' ? 'classification-focus' : '' }}" data-classifi="1" >精华</text>
+		<text class="classification-list {{classifi == '2' ? 'classification-focus' : '' }}" data-classifi="2" >分享</text>
+		<text class="classification-list {{classifi == '3' ? 'classification-focus' : '' }}" data-classifi="3" >问答</text>
+		<text class="send-article" catchtap="goEdit">投稿</text>
+	</view>
+	<view class="community-content">
+		<view class="content-list" wx:for="{{CMContent}}">
+			<view class="content-detail">
+				<view class="article-author">
+					<image class="author-logo" src="{{item.avatar}}"></image>
+					<text class="author-nick" >{{item.name}}</text>
+					<text class="article-tile">{{item.time}}</text>
+				</view>
+				<view class="article-title">{{item.title}}</view>
+				<view class="article-detail-msg">
+					<text class="text-clip">阅读<text>1024</text></text>
+					<text class="text-clip">评论<text>1024</text></text>
+					<text class="text-clip">喜欢<text>1024</text></text>
+					<text class="text-clip">喜欢<text>1024</text></text>
+					<text class="text-clip">打赏<text>1024</text></text>
+				</view>
+			</view>
+			<view class="article-img">
+				<image class="article-img-box" src="http://upload-images.jianshu.io/upload_images/3213553-6aba058bdc0132ec.JPG?imageMogr2/auto-orient/strip%7CimageView2/1/w/300/h/300"></image>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,85 @@
+page{
+	height: 100%;
+}
+.chat-room{
+	font-size: 28rpx;
+	color: #000;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #ebebeb;
+}
+.chatroom-name{
+	height: 80rpx;
+	line-height: 80rpx;
+	text-align: center;
+}
+.roomname-title{
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #000;
+}
+.chat-box{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.chat-operate{
+	height: 100%;
+	border:2rpx solid #d5d5d5;
+}
+.chat-msg-wrapper{
+	flex:1;
+}
+.chat-input-box{
+	border-top: 2rpx solid #d7d7d9;
+	border-bottom: 2rpx solid #d7d7d9;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #f5f5f6;
+	padding: 15rpx 10rpx;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	flex-direction: row;
+}
+.chat-input{
+	padding: 18rpx 10rpx;
+	width: 500rpx;
+	background-color: #fcfcfc;
+	border-radius: 8rpx;
+	border: 2rpx solid #ddd;
+	font-weight: bold;
+	color: #000;
+	letter-spacing:4rpx;
+}
+.chat-bottom-com{
+	height: 74rpx;
+	display: flex;
+	align-items: center;
+}
+.choose-img{
+	width: 60rpx;
+	height: 60rpx;
+	margin: 0 16rpx;
+}
+.msg-submit{
+	background-color: #007aff;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing:8rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+	width: 100rpx;
+	border-radius: 8rpx;
+}
+.chat-holder{
+	font-size: 28rpx;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	height: 0;
+}

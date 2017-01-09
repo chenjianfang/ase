@@ -1,0 +1,43 @@
+<view class="wrapper">
+
+	<view class="community-head clearfix">
+		<swiper class="head-swiper" indicator-dots="true" autoplay="true">
+			<swiper-item>
+				<image class="swiper-img" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" ></image>
+			</swiper-item>
+			<swiper-item>
+				<image class="swiper-img" src="http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg" ></image>
+			</swiper-item>
+		</swiper>
+		<view class="head-proto-tips clearfix">
+			<view class="head-create" catchtap="createCM">
+				<text>创建</text>
+			</view>
+			<view class="head-search" catchtap="roomSearch">
+				<text class="search-input-button">搜索</text>
+				<icon size="18" class="search-icon" type="search" />
+			</view>
+		</view>
+	</view>
+	<view class="attention">
+		<view class="attention-title">
+			<text>关注</text>
+		</view>
+		<view class="user-attention-list clearfix">
+			<view wx:for="{{attention}}" class="attention-list-detail my-attention" catchtap="communityModel" id="{{item.id}}">{{item['cmName']}}</view>
+		</view>
+	</view>
+	<view class="attention">
+		<view class="attention-title">
+			<text>广场</text>
+		</view>
+		<view class="user-attention-list clearfix">
+			<block wx:for="{{cminit}}">
+				<view class="attention-list-detail cm-square" id="{{item['id']}}" catchtap="attentionOperate">{{item['cmName']}}
+					<view class="cm-attention" data-attention="true">关注</view>
+				</view>
+			</block>
+		</view>
+	</view>
+</view>
+

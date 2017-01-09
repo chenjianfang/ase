@@ -1,0 +1,26 @@
+<view class="search-room-wrapper" bindtap="searchGetFocus">
+	<form>
+		<view class="search-form-box">
+			<input focus="{{inputFocus}}" class="search-input" type="text" placeholder="{{searchValHolder}}" value="{{searchVal}}" bindinput="inputSearchValue" placeholder-style="color:#b5b5b5;"/>
+			<image src="../../images/clear.png" class="search-clear-icon" catchtap="inputValClear"></image>
+			<view class="search-submit" catchtap="searchSubmit">搜索</view>
+		</view>
+	</form>
+	<view class="recent-search">
+		<view class="recent-search-title">
+			<text>最近搜索</text>
+			<image src="../../images/clear.png" class="search-clear-icon" catchtap="recentSeachClear"></image>
+		</view>
+		<view class="recent-box">
+			<view class="recent-list" catchtap="communityModel" wx:for="{{recentSearch}}" id="{{item.id}}">{{item.cmName}}</view>
+		</view>
+	</view>
+	<view class="guess-like">
+		<view class="guess-like-title">
+			<text>猜您想找</text>
+		</view>
+		<view class="recent-box">
+			<view class="recent-list" catchtap="communityModel" wx:for="{{gussSeach}}" id="{{item.id}}">{{item.cmName}}</view>
+		</view>
+	</view>
+</view>

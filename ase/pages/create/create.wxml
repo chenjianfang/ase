@@ -1,0 +1,18 @@
+<view class="create-community">
+	<view class="container">
+		<form>
+			<view class="create-title">创社</view>
+			<view class="create-item">
+				<text class="create-tips">A 社 名</text>
+				<input class="create-input" type="text" bindinput="bindCMName" value="{{CMName}}" focus="true" placeholder="建议大于或等于2个字符" placeholder-style="color:#b1b1b1;font-size:28rpx" />
+			</view>
+			<view class="create-item">
+				<text class="create-tips">创 建 人</text>
+				<input class="create-input" type="text" bindinput="createName" value="{{createName}}" focus="true" placeholder="创社作者" placeholder-style="color:#b1b1b1;font-size:28rpx" />
+			</view>
+			<view class="create-submit" catchtap="createCM">
+				立即创建
+			</view>
+		</form>
+	</view>
+</view>

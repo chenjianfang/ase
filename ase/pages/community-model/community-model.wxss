@@ -1,0 +1,160 @@
+page{
+	height: 100%;
+	overflow: hidden;
+}
+.community-wrapper{
+
+}
+.classification{
+	margin-top: 20rpx;
+	padding-left: 20rpx;
+	font-size: 24rpx;
+}
+.classification-list{
+	display: inline-block;
+	line-height: 1;
+	color: #d96f5e;
+	padding: 8rpx 15rpx;
+	border: 2rpx solid #d96f5e;
+	border-radius: 8rpx;
+	margin-right: 28rpx;
+}
+.classification-focus{
+	background-color: #d96f5e;
+	color: #fff;
+}
+.send-article{
+	display: inline-block;
+	line-height: 1;
+	color: #007aff;
+	padding: 8rpx 15rpx;
+	border: 2rpx solid #007aff;
+	border-radius: 8rpx;
+}
+.community-content{
+	margin:10rpx 30rpx 0 30rpx;
+}
+.content-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2rpx solid #d5d5d5;
+	height:	256rpx;
+	box-sizing: border-box;
+}
+.content-detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 74%;
+}
+.article-img{
+	font-size: 0;
+}
+.article-img-box{
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 8rpx;
+}
+.article-author{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	margin-bottom: 15rpx;
+	font-size: 24rpx;
+}
+.author-logo{
+	width: 50rpx;
+	height: 50rpx;
+	margin-right: 10rpx;
+	border-radius: 50%;
+}
+.author-nick{
+	color: #519dcb;
+	margin-right: 10rpx;
+}
+.article-tile{
+	color: #b1b1b1;
+}
+.article-title{
+	text-align: left;
+	font-size: 28rpx;
+	color: #000;
+	line-height: 1.5;
+	margin-bottom: 15rpx;
+}
+.article-detail-msg{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999;
+	font-size: 24rpx;
+	text-align: left;
+}
+.text-clip{
+	margin-right: 10rpx;
+}
+.community-chat{
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: row;
+	font-size: 24rpx;
+	margin-top: 10rpx;
+}
+.chat-img{
+	display: block;
+	width: 40rpx;
+	height: 40rpx;
+}
+.chat-display{
+	display: none;
+}
+.community-search-input{
+	padding-right: 60rpx;
+	color: #000;
+}
+.input-translate{
+	width: 449rpx;
+}
+.shadow-bg{
+	position: fixed;
+	top: 67rpx;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+.headshadow{
+	background-color: rgba(0,0,0,0.7);
+
+}
+.head-search-pos{
+	float: left;
+}
+.search-submit{
+	float: left;
+	background-color: #007aff;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing:8rpx;
+	height: 53.5rpx;
+	line-height: 53.5rpx;
+	text-align: center;
+	width: 90rpx;
+	border-radius: 8rpx;
+	font-size: 24rpx;
+	margin-left: 26rpx;
+}
+.community-search-clear{
+	position: absolute;
+	top: 5rpx;
+	right: 8rpx;
+}
+
+

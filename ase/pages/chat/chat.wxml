@@ -1,0 +1,17 @@
+<view class="chat-room">
+	<view class="chatroom-name">
+		<text class="roomname-title" >程序员(16)</text>
+	</view>
+	<view class="chat-box">
+		<scroll-view class="chat-msg-wrapper"></scroll-view>
+		<view class="chat-input-box">
+			<textarea class="chat-input" style="height: {{textHeight}}rpx;" bindlinechange="lineChange" cursor-spacing="{{cursorSpacing}}"></textarea>
+			<view class="chat-bottom-com">
+				<image class="choose-img" src="../../images/chooseimg.png"></image>
+			</view>
+			<view class="chat-bottom-com">
+				<view class="msg-submit">发送</view>
+			</view>
+		</view>
+	</view>
+</view>

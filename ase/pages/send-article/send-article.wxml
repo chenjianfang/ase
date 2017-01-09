@@ -1,0 +1,22 @@
+<view class="send-article">
+	<view class="article-tile">
+		<input class="article-title-input"  type="text" maxlength="30" placeholder="请输入标题" placeholder-style="color:#b1b1b1" bindinput="handlerInput" />
+	</view>
+	<view class="article-content">
+		<textarea class="article-content-text" focus="false" style="height:{{lineCount*30+40}}rpx;" bindlinechange="articleContentChange" placeholder="请输入正文" placeholder-style="color:#b1b1b1;height:30rpx" value="" maxlength="-1" bindblur="contentBlur" bindinput="handleText"></textarea>
+	</view>
+
+	<view class="article-operate clearfix">
+		<image class="chooseimg choseimg-left" catchtap="chooseImg" src="{{chooseImg}}"></image>
+		<view class="publish-article" catchtap="publishArticle">发布</view>
+
+		<view class="choose-class" catchtap="classContentChoose">
+			<image class="chooseimg" src="../../images/dot.png"></image>
+			<view class="class-choose {{classChoose?'show':'hide'}}" animation="{{animationData}}" bindtap="classChooseWrapper">
+				<view class="class-choose-list" data-title-model="1">分享</view>
+				<view class="class-choose-list" data-title-model="2">问答</view>
+			</view>
+		</view>
+		<text class="currentModel">{{currentModel}}</text>
+	</view>
+</view>

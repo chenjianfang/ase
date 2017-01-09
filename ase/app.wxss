@@ -1,0 +1,61 @@
+input,view,text{
+	padding:0;
+}
+.clearfix::after{
+	display: block;
+	clear: both;
+	content: "";
+}
+/*头部栏*/
+.head-proto-tips{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15rpx 20rpx 0 20rpx;
+	box-sizing: border-box;
+}
+/*头部滚动图片*/
+.community-head{
+	position: relative;
+}
+.head-swiper{
+	height: 300rpx;
+}
+.swiper-img{
+	width: 100%;
+	height: 100%;
+}
+/*搜索按钮*/
+.head-search{
+	float: right;
+	position: relative;
+}
+.search-icon{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20rpx;
+}
+.search-input-button{
+	display: block;
+	width: 140rpx;
+	height: 53.5rpx;
+	padding-left: 60rpx;
+	line-height: 53.5rpx;
+	border-radius: 53.5rpx;
+	background-color: #fff;
+	color: #b1b1b1;
+	font-size: 24rpx;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+/*输入清除*/
+.search-clear-icon{
+	width: 44rpx;
+	height: 44rpx;
+}
